@@ -28,3 +28,19 @@ WHERE city='Bangalore';
 
 SELECT * FROM zomato
 WHERE city = 'Bangalore' AND rating > 4.2;
+
+select * FROM zomato
+WHERE city='Bangalore';
+
+SELECT * FROM zomato
+WHERE city = 'Bangalore' AND rating > 4.2;
+
+SELECT * FROM zomato
+WHERE rating<=4.3;
+
+SELECT name,city FROM zomato
+WHERE city!='Bangalore';
+
+SELECT * FROM zomato
+WHERE ( city='Chennai' OR 'Delhi')
+AND rating>4.5;
