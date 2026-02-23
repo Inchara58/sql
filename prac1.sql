@@ -22,3 +22,9 @@ INSERT INTO zomato VALUES (5, 'Haldirams', 'Delhi', 3.9, '2005-01-30');
 
 -- Step 5: See all data
 SELECT * FROM zomato;
+
+select * FROM zomato
+WHERE city='Bangalore';
+
+SELECT * FROM zomato
+WHERE city = 'Bangalore' AND rating > 4.2;
