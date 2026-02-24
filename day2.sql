@@ -8,3 +8,31 @@ where city='bangalore';
 
 select count(*) from zomato
 where city='chennai'
+
+select count(*) from zomato
+where city='chennai';
+
+
+select min(rating) , max(rating) from zomato;
+
+select avg(rating) from zomato
+where rating>4.0;
+
+select count(*),avg(rating),min(rating),max(rating) from zomato
+where city='bangalore';
+
+SELECT city, COUNT(*) AS total_restaurants
+FROM zomato
+GROUP BY city;
+
+select city,avg(rating) as avgg
+from zomato
+group by city
+order by avgg desc;
+
+select city,count(*) from zomato
+group by city;
+
+select city,avg(rating) as avgg from zomato
+group by city
+order by avgg desc;
