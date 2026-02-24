@@ -36,3 +36,13 @@ group by city;
 select city,avg(rating) as avgg from zomato
 group by city
 order by avgg desc;
+
+
+select city,count(*) as cc,avg(rating) as avg from zomato
+group by city
+having cc>=1 and avg>4.2;
+
+select city,avg(rating) as avgg from zomato
+where opening_date>'2008-01-01'
+group by city
+having avgg>4.2;
