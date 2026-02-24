@@ -46,3 +46,6 @@ select city,avg(rating) as avgg from zomato
 where opening_date>'2008-01-01'
 group by city
 having avgg>4.2;
+
+select * from zomato
+where opening_date between '2010-01-01' and '2013-01-01';
