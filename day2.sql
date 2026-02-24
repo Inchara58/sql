@@ -76,6 +76,30 @@ where restaurant_id=1;
 update zomato
 set rating ='0.1';
 
+select name,city from zomato
+order by city asc;
+
+select city, count(*) from zomato
+group by city;
+
+select * from zomato
+where name like '%an%' and rating>4.0;
+
+select city from zomato 
+where rating between 4.0 and 4.5;
+
+select * from zomato
+where opening_date>'2008-01-01';
+
+select city,count(*),avg(rating) as avgg,max(rating)from zomato
+where city>0 and avgg>4.0
+order by avgg desc;
+
+
+
+
+
+
 
 
 
