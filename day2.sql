@@ -49,3 +49,35 @@ having avgg>4.2;
 
 select * from zomato
 where opening_date between '2010-01-01' and '2013-01-01';
+
+select * from zomato 
+where restaurant_id=5;
+
+update zomato
+set name="haldi premium"
+where restaurant_id=5;
+
+select * from zomato;
+
+update zomato
+set rating ='4.7'
+where restaurant_id=1;
+
+update zomato
+set city='Pune', rating='4.0'
+where restaurant_id=2;
+
+select * from zomato
+where city='bangalore';
+
+delete from zomato
+where restaurant_id=1;
+
+update zomato
+set rating ='0.1';
+
+
+
+
+
+
