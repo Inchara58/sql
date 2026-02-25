@@ -26,3 +26,9 @@ INSERT INTO orders VALUES (102, 2, 'Pizza', 500, '2024-01-11');
 INSERT INTO orders VALUES (103, 1, 'Burger', 200, '2024-01-12');
 INSERT INTO orders VALUES (104, 3, 'Dosa', 150, '2024-01-13');
 INSERT INTO orders VALUES (105, 6, 'Pasta', 400, '2024-01-14');
+
+
+select c.name ,o.food_item ,o.amount
+from customers c
+left join orders o
+on c.customer_id=o.customer_id;
