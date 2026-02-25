@@ -32,3 +32,18 @@ select c.name ,o.food_item ,o.amount
 from customers c
 left join orders o
 on c.customer_id=o.customer_id;
+
+select c.name ,o.food_item ,o.amount
+from customers c
+left join orders o
+on c.customer_id=o.customer_id;
+
+select c.name ,o.food_item ,o.amount
+from customers c
+right join orders o
+on c.customer_id=o.customer_id;
+
+select c.name,c.city,o.food_item
+from customers c
+inner join orders o
+on c.customer_id=o.customer_id;
