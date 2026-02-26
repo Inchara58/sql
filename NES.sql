@@ -18,3 +18,22 @@ inner join orders o
 on c.customer_id=o.customer_id
 where c.city='Banglore'
 order by o.amount;
+
+
+CREATE TABLE zomato(
+    restaurant_id INT PRIMARY KEY,
+	name VARCHAR(10),
+    city VARCHAR(10),
+    Rating decimal,
+    opening_date DATE
+	
+
+);
+
+CREATE TABLE student(
+      student_id INT PRIMARY KEY,
+      name VARCHAR(20),
+      branch VARCHAR(10),
+      cgpa DECIMAL,
+      city VARCHAR(100)
+      );
